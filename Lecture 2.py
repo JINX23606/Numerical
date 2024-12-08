@@ -21,12 +21,12 @@ y.count('')
 # (i) A module is a file containing a collection of fns
 # (ii) A package is a derectiory organizing
 #   modules
-import math_operations as mo
-result = mo.add(2, 5)
+import utilities as mo
+result = mo.math_operations.add(2, 5)
 print(result)
-lob = mo.subtract(7, 4)
+lob = mo.math_operations.subtract(7, 4)
 print(lob)
-rob = mo.subtract(8, 7)
+rob = mo.math_operations.subtract(8, 7)
 print(rob)
 
 # 3rd party
@@ -38,10 +38,12 @@ sqrt = mt.sqrt(4)
 print(sqrt)
 print(mt.pi)
 
-import matplotlib.pyplot as plt
-names = ['A','B','C']
-values= [5,8,3]
-my_bar = plt.show(names,values)
 
-import numpy as np
-np.mean(values)
+
+
+import utilities as u
+z = u.math_operations.add(5,2)
+print(z)
+
+name = input(str('ใส่ชื่อองคุณ :'))
+print(f'คุณชื่อ : {name}')
