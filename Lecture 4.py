@@ -276,7 +276,8 @@ genderdict = {0:'male', 1:'female'}
 caution = {
             (0,1,2): 'tuples can be keys',
             1: 'integers can be keys',
-            [1,2,3]: 'lists cannot be keys'}
+            (1,2,3): 'lists cannot be keys'}
+print(caution)
 
 # (ii) Accessing Elements
 # Regular dictionaries are not ordered, so use keys instead of indices to 
