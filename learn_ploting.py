@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 plt.subplots()
 plt.show()
 # Note that
-type(plt.subplots())  # tuple (  Figure, (a collection of) Axes Object(s)  )
+print(type(plt.subplots()))  # tuple (  Figure, (a collection of) Axes Object(s)  )
 # Unpack
 fig , ax  =  plt.subplots()
 fig.set_facecolor('lightgrey')

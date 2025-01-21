@@ -30,7 +30,7 @@ a[0,0] = 10
 print(a)
 #3 Dimantion list of list of list
 three_dim = np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
-print(three_dim[1,0,0])
+print(three_dim)
 print('Dimention :',three_dim.ndim)
 print('Type :',three_dim.dtype)
 print('Size :',three_dim.size)
@@ -41,7 +41,7 @@ print(x)
 y = np.arange(1,50,1 )
 print(y)
 #Random
-np.random.seed(42)
+np.random.seed(41)
 arr1 = np.random.rand(5)
 print(arr1)
 

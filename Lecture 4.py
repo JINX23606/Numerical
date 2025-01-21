@@ -228,9 +228,9 @@ print(a[2:5])
 print(a[2:7:2])
 
 b = (1,2,3,4,5,6,7,8)
-print(b[:5])
-print(b[2:])
-print(b[2:5])
+print(b[:5])#1,2,3,4,5
+print(b[2:])#3,4,5,6,7,8
+print(b[2:5])#3,4,5
 print(b[2:7:2])
 
 c = [1, 2, 3, 4, 5, 6]
@@ -310,7 +310,7 @@ print("After updating 'a':", my_dict_1)
 #             dictionary or iterable of key-value pairs.
 
 print("Keys in my_dict_1:", my_dict_1.keys())
-type(my_dict_1.keys())
+print(type(my_dict_1.keys()))
 print('List of the keys:',list(my_dict_1.keys()))
 
 

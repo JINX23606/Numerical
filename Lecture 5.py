@@ -54,9 +54,9 @@ def test():
 
 result = test()
 print(result) 
-type(result)    
-result[0]    
-result[1]
+print(type(result))
+print(result[0])    
+print(result[1])
 # we can unpack the multiple values and assign them to seperate variables
 a,b = test()
 print(a)
