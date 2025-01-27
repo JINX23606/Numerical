@@ -93,6 +93,7 @@ my_vec2 * my_vec3
 my_vec4 <- c(1,2)
 my_vec2 + my_vec4
 temp <- c(7.2,NA,7.1,6.9,6.5,5.8,5.8,5.5,NA,5.5)
-temp
-mean_temp <- mean(temp)
+sort_temp <- sort(temp)
+sort_temp
+mean_temp <- mean(temp,na.rm=TRUE)
 mean_temp
