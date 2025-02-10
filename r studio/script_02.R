@@ -40,4 +40,27 @@ p.names <- c("John","Bob","Wlliam","Mike","Mille")
 df <- data.frame(name=p.names,height=p.height,weight = p.weight)
 
 wage_1 <- read.csv(file.choose())
+str(wage_1)
 View(wage_1)
+mean(wage_1$lwage)
+summary(wage_1$wage)
+mean(wage_1$educ)
+summary(wage_1$educ)
+mean(wage_1$female)
+summary(wage_1$female)
+wage_1[1:20,1:7]
+wage_1[4,2]
+wage_1$educ[4]
+wage_1[c(1,5,12,30,50,65,125,263,350),c(1,3,6,8,17,19,22,24)]
+wage_1[,1:3]
+wage_1[-(1:489),-c(1,3,4,5,6,7,8,10,12,14,16,18,19,21,22)]
+wage_1[1:15,c("wage","educ","exper","lwage")]
+
+wage1sub <- wage_1[1:10,1:4]
+wage1num <- wage_1[1:20,c(1,3,4)]
+highwage <- wage_1[wage_1$wage>12&wage_1$nonwhite==1,c("wage","educ","exper","tenure")]
+highwage
+highwage <- wage_1[wage_1$wage>12&wage_1$nonwhite==0,c("wage","educ","exper","tenure")]
+highwage
+highwage_educ_or <- wage_1[wage_1$wage>=20|wage_1$wage<2,c("wage","educ","exper","tenure")]
+highwage_educ_or
