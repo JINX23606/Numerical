@@ -58,9 +58,29 @@ wage_1[1:15,c("wage","educ","exper","lwage")]
 
 wage1sub <- wage_1[1:10,1:4]
 wage1num <- wage_1[1:20,c(1,3,4)]
-highwage <- wage_1[wage_1$wage>12&wage_1$nonwhite==1,c("wage","educ","exper","tenure")]
+highwage <- wage_1[wage_1$wage>=12&wage_1$nonwhite==1,c("wage","educ","exper","tenure")]
 highwage
-highwage <- wage_1[wage_1$wage>12&wage_1$nonwhite==0,c("wage","educ","exper","tenure")]
+highwage <- wage_1[wage_1$wage>=12&wage_1$nonwhite==0,c("wage","educ","exper","tenure")]
 highwage
-highwage_educ_or <- wage_1[wage_1$wage>=20|wage_1$wage<2,c("wage","educ","exper","tenure")]
+highwage_educ_or <- wage_1[wage_1$wage>=20|wage_1$wage<2,c("wage","educ","nonwhite")]
 highwage_educ_or
+#ordering
+wage_ord <- wage_1[order(wage_1$wage),]
+wage_ord
+View(wage_ord)
+tenure_ord <- wage_1[order(wage_1$tenure,decreasing = TRUE),]
+View(tenure_ord)
+educ_ord <- wage_1[order(wage_1$female,wage_1$educ),]
+View(educ_ord)
+
+#add data frame
+df_1 <- data.frame(id = 1:4,height = c(120,150,132,122),weight = c(44,56,49,45))
+df_2 <- data.frame(id = 5:6,height = c(119,110),weight = c(39,35))
+df_3 <- data.frame(id = 1:4,height = c(120,150,132,122),weight = c(44,56,49,45))
+df_4 <- data.frame(locations = c("UK","CZ","CZ","UK"))
+df_rcomb <- rbind(df_1,df_2)
+df_rcomb
+df_ccomb <- cbind(df_3,df_4)
+df_ccomb
+
+
