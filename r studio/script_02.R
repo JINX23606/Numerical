@@ -82,5 +82,3 @@ df_rcomb <- rbind(df_1,df_2)
 df_rcomb
 df_ccomb <- cbind(df_3,df_4)
 df_ccomb
-
-
