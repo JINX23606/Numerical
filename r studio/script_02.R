@@ -81,4 +81,4 @@ df_4 <- data.frame(locations = c("UK","CZ","CZ","UK"))
 df_rcomb <- rbind(df_1,df_2)
 df_rcomb
 df_ccomb <- cbind(df_3,df_4)
-df_ccomb
+mf_ccomb
